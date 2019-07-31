@@ -182,7 +182,7 @@ public class SortCase implements Case {
         System.arraycopy(extra,0,a,low,length);
     }
 
-    @Benchmark
+   // @Benchmark
     public void testQuickOne() {
         int[] a = new int[100000];
         Random random = new Random(20190716);
@@ -218,7 +218,7 @@ public class SortCase implements Case {
         }
         mergeSort(a);
     }
-    @Benchmark
+   // @Benchmark
     public void testArraysSort() {
         int[] a = new int[100000];
         Random random = new Random(20190716);
