@@ -48,4 +48,13 @@ public class Commutils {
     public static Object jsonToObject(String jsonStr, Class objClass) {
         return gson.fromJson(jsonStr,objClass);
     }
+
+    /**
+     * 判断输入的额用户名密码是否为空
+     * @param str
+     * @return
+     */
+    public static boolean strIsNull(String str) {
+        return str == null || str.equals("");
+    }
 }

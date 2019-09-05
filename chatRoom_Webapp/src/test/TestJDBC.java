@@ -1,6 +1,5 @@
 import com.hbc.chatroom.untils.JDBCUtils;
 import com.hbc.chatroom.untils.JDBCUtils1;
-import jdk.nashorn.internal.scripts.JD;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.junit.Assert;
 import org.junit.Test;

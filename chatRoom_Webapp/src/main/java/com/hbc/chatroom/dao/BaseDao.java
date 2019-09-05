@@ -29,7 +29,7 @@ public class BaseDao {
         }
     }
 
-    protected static DruidPooledConnection getConnectio() {
+    protected Connection getConnection() {
         try {
             return dataSource.getConnection();
         } catch (SQLException e) {
@@ -39,7 +39,7 @@ public class BaseDao {
         return null;
     }
 
-    protected static void closeResources(Connection connection, Statement statement) {
+    protected void closeResources(Connection connection, Statement statement) {
         if (connection != null) {
             try {
                 connection.close();
@@ -57,7 +57,7 @@ public class BaseDao {
         }
     }
 
-    protected static void closeResources(Connection connection,
+    protected void closeResources(Connection connection,
                                       Statement statement,
                                       ResultSet resultSet) {
         closeResources(connection,statement);
